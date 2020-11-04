@@ -43,7 +43,7 @@
             android:textSize="20sp" />
 
         <RatingBar
-            android:id="@+id/bar_dog"
+            android:id="@+id/bar1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -62,7 +62,7 @@
             android:textSize="20sp" />
 
         <RatingBar
-            android:id="@+id/bar_cat"
+            android:id="@+id/bar2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -81,7 +81,7 @@
             android:textSize="20sp" />
 
         <RatingBar
-            android:id="@+id/bar_rabbit"
+            android:id="@+id/bar3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>

@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     int imgId[] = {R.id.cat, R.id.dog, R.id.rabbit};
     String imgName[] = {"cat", "dog", "rabbit"};
     ImageView[] img = new ImageView[3];
-    int counts[];
+    int counts[] = new int[3];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,10 +44,9 @@ public class MainActivity extends AppCompatActivity {
         btn_rank.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(getApplicationContext(), ResultActivity.class);
+                intent = new Intent(getApplicationContext(), RankActivity.class);
                 intent.putExtra("VoteCounts",counts);
                 intent.putExtra("ImgName",imgName);
-                intent.putExtra("Img",img);
                 startActivity(intent);
             }
         });
@@ -55,10 +54,9 @@ public class MainActivity extends AppCompatActivity {
         btn_result.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                intent = new Intent(getApplicationContext(), RankActivity.class);
+                intent = new Intent(getApplicationContext(), ResultActivity.class);
                 intent.putExtra("VoteCounts",counts);
                 intent.putExtra("ImgName",imgName);
-                intent.putExtra("Img",img);
                 startActivity(intent);
             }
         });
